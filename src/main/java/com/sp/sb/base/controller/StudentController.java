@@ -20,4 +20,8 @@ public class StudentController {
         return service.getStudentsList();
     }
 
+    @GetMapping("/heartbeat")
+    public String heartBeat() {
+        return "OK";
+    }
 }
