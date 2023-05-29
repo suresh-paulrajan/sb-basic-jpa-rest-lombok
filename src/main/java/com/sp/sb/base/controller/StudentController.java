@@ -19,4 +19,9 @@ public class StudentController {
     public List<Student> getStudents(){
         return service.getStudentsList();
     }
+
+    @GetMapping("/heartbeat")
+    public String heartBeat() {
+        return "OK";
+    }
 }
